@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add your inline CSS here to style the page as needed */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Generate QR Code</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Generate QR Code">
+        </form>
+        {% if qr_code %}
+            <h3> Generated QR Code:</h3>
+            <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code">
+            <br>
+            <a href="{% url 'download_qr_code' %}">Download QR Code</a>
+        {% endif %}
+    </div>
+</body>
+</html>
