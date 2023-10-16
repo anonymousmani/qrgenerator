@@ -18,3 +18,39 @@ Key Features:
 🔵 Security: Your data's security is our top priority. Rest assured that your QR codes and the information within them are kept safe and private.
 
 
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Python 3.x installed.
+- Django installed
+- qrcode installed
+
+
+## Installation
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/anonymousmani/qrgenerator.git
+   
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd qrgenerator
+   ```
+3. Install required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+## Usage
+4. Run the application:
+   ```
+    python manage.py runserver
+   ```
+5. Open Browser and Go:
+   ```
+    127.0.0.1:8000
+   ```
+
