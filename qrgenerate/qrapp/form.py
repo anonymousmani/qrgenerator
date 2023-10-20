@@ -4,5 +4,5 @@ from django import forms
 class qrform(forms.ModelForm):
     class Meta:
      model = qr
-     fields = ["text"]
+     fields = ["name", "text"]
      
