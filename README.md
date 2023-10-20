@@ -40,9 +40,11 @@ Before you begin, ensure you have met the following requirements:
    ```
    cd qrgenerator
    ```
-3. Install required dependencies:
+3. Create admin:
    ```
-   pip install -r requirements.txt
+   $ py manage.py makemigrations
+   $ py manage.py migrate
+   $ py manage.py createsuperuser
    ```
 ## Usage
 4. Run the application:
